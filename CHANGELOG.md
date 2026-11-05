@@ -4,6 +4,13 @@ All notable changes to `orion-mcp` are documented here. The format is based on [
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-05
+
+### Changed
+- **Breaking: moves to `orion-core` 0.10.** `McpServer::tools` hands back `orion_core::Tool`s and `orion_core` is re-exported, so a host moves with it, and one on `orion-core` 0.9 stays on `orion-mcp` 0.1. Nothing else in the API changes.
+
+## [0.1.0] - 2026-11-03
+
 ### Added
 - **MCP server tools as Orion tools.** `McpServer::builder(url)` connects to an MCP server over Streamable HTTP, and `McpServer::tools` lists its tools (`tools/list`) as `orion_core::Tool`s whose `execute` sends `tools/call`. Each keeps the server's name, description and input schema.
 - `McpServerBuilder::prefix` offers a server's tools as `{prefix}__{name}` (`PREFIX_SEPARATOR`).

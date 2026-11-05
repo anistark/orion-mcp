@@ -1,6 +1,6 @@
 [package]
 name = "orion-mcp"
-version = "0.1.0"
+version = "0.2.0"
 description = "MCP server tools as Orion agent tools"
 authors = ["Kumar Anirudha <orion@anirudha.dev>"]
 license = "MIT"
@@ -17,7 +17,7 @@ keywords = ["mcp", "agent", "llm", "tools", "ai"]
 categories = ["asynchronous", "network-programming"]
 
 [dependencies]
-orion-core = "0.9"
+orion-core = "0.10"
 # The official MCP SDK: the client role over the Streamable HTTP transport,
 # with reqwest and rustls underneath.
 rmcp = { version = "3.8", default-features = false, features = [
