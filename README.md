@@ -12,8 +12,8 @@ It is built on [`rmcp`](https://crates.io/crates/rmcp), the official Rust SDK, a
 
 ```toml
 [dependencies]
-orion-core = "0.9"
-orion-mcp = "0.1"
+orion-core = "0.10"
+orion-mcp = "0.2"
 ```
 
 ```rust
